@@ -1,0 +1,28 @@
+/cm/local/apps/slurm/var/spool/job16215068/slurm_script: line 27: 14_R1=/projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R1_001.fastq.gz: No such file or directory
+/cm/local/apps/slurm/var/spool/job16215068/slurm_script: line 28: 14_R2=/projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R2_001.fastq.gz: No such file or directory
+/cm/local/apps/slurm/var/spool/job16215068/slurm_script: line 31: 11_R1=/projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R1_001.fastq.gz: No such file or directory
+/cm/local/apps/slurm/var/spool/job16215068/slurm_script: line 32: 11_R2=/projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R2_001.fastq.gz: No such file or directory
+/cm/local/apps/slurm/var/spool/job16215068/slurm_script: line 5: __conda_exe: command not found
+	Command being timed: "STAR --runThreadN 8 --runMode genomeGenerate --genomeDir /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/genome_Dir/Mus_musculus.GRCm39.dna.ens104.STAR_2.7.1a --genomeFastaFiles Mus_musculus.GRCm39.dna.primary_assembly.fa --sjdbGTFfile /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Code/Mus_musculus.GRCm39.104.gtf"
+	User time (seconds): 5877.88
+	System time (seconds): 52.98
+	Percent of CPU this job got: 533%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 18:31.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 32294836
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 364922
+	Voluntary context switches: 34890
+	Involuntary context switches: 4758
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

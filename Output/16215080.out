@@ -1,0 +1,16 @@
+/projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/genome_Dir/Mus_musculus.GRCm39.dna.ens104.STAR_2.7.1a
+Mus_musculus.GRCm39.dna.primary_assembly.fa
+	STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R2_001.fastq.gz --genomeDir /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/genome_Dir/Mus_musculus.GRCm39.dna.ens104.STAR_2.7.1a --outFileNamePrefix /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/Mmus_alligned_L14
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Sep 06 21:43:07 ..... started STAR run
+Sep 06 21:43:07 ..... loading genome
+Sep 06 21:43:17 ..... started mapping
+Sep 06 21:44:00 ..... finished mapping
+Sep 06 21:44:00 ..... finished successfully
+	STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R2_001.fastq.gz --genomeDir /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/genome_Dir/Mus_musculus.GRCm39.dna.ens104.STAR_2.7.1a --outFileNamePrefix /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/Mmus_alligned_L11
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Sep 06 21:44:00 ..... started STAR run
+Sep 06 21:44:00 ..... loading genome
+Sep 06 21:44:10 ..... started mapping
+Sep 06 21:46:49 ..... finished mapping
+Sep 06 21:46:49 ..... finished successfully
