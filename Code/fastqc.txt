@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH -p bgmp
+
+#SBATCH --cpus-per-task=1
+#SBATCH --job-name=QS_D
+#SBATCH -o %j.out
+#SBATCH -e %j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --account=bgmp
+#SBATCH --time=0-24:00:00
+
+conda activate QAA
+
+echo %DATE% %TIME% >> prog_start
+##fastqc -t 2 -o /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R2_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R1_001.fastq.gz 
+fastqc -t 2 -o /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R2_001.fastq.gz 
+
+echo %DATE% %TIME% >> prog_end

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH -p bgmp
+
+#SBATCH --cpus-per-task=8
+#SBATCH --job-name=trimming
+#SBATCH -o %j.out
+#SBATCH -e %j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --account=bgmp
+#SBATCH --time=0-24:00:00
+
+conda activate QAA
+
+trimmomatic PE /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/14_3B_control_S10_L008_R2_001.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/14_R1.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/14_R1.un.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/14_R2.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/14_R2.un.trim.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+
+trimmomatic PE /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R1_001.fastq.gz /projects/bgmp/shared/2017_sequencing/demultiplexed/11_2H_both_S9_L008_R2_001.fastq.gz  /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/11_R1.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/11_R1.un.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/11_R2.trim.fastq.gz /projects/bgmp/schalla/bioinfo/Bi623/Assignment/Leslie_Assignment/QAA/Output/11_R2.un.trim.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
